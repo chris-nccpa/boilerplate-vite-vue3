@@ -1,18 +1,14 @@
 <script setup lang="ts">
-const router = useRouter()
-const { t } = useI18n()
+	const router = useRouter();
 </script>
 
 <template>
-  <main p="x4 y10" text="center teal-700 dark:gray-200">
-    <div text-4xl>
-      <div i-carbon-warning inline-block />
-    </div>
-    <RouterView />
-    <div>
-      <button btn text-sm m="3 t8" @click="router.back()">
-        {{ t('button.back') }}
-      </button>
-    </div>
-  </main>
+	<main p="x4 y10" text="center teal-700 dark:gray-200">
+		<RouterView />
+		<div class="text-center">
+			<button class="mt-8 text-center underline" @click="router.back()">
+				Back
+			</button>
+		</div>
+	</main>
 </template>

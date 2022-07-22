@@ -1,0 +1,12 @@
+.n-form, .form {
+    label {
+        &.custom {
+            @apply text-xl font-header;
+        }
+    }
+    
+    .form-section {
+        @apply mb-6;
+    }
+}
+

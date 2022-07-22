@@ -1,0 +1,67 @@
+@layer base {
+    body {
+        font-family: Roboto, Arial;
+    }
+    h1,
+    h2,
+    h3, h4, h5 {
+        font-family: Oswald, Arial;
+        &.teal {
+            @apply text-teal;
+        }
+    }
+
+    h1 {
+        @apply text-4xl;
+    }
+    .page-header {
+        @apply flex relative uppercase pb-2 mb-4 items-end;
+        &:after {
+            content: ' ';
+            height: 1px;
+            @apply block absolute bottom-0 w-full border-b border-black;
+        }
+        h1 {
+            @apply leading-8;
+        }
+    }
+
+    h2 {
+        @apply uppercase text-3xl mb-2;
+    }
+    h3 {
+        @apply text-2xl mb-2;
+    }
+    h4 {
+        @apply text-xl mb-2 leading-8;
+    }
+    h5 {
+        @apply text-xl font-header;
+    }
+    .sub-heading {
+        font-family: Oswald, Arial;
+        @apply text-gray-500 text-3xl;
+    }
+
+    a {
+        @apply underline text-teal;
+
+        &.btn {
+            @apply no-underline;
+        }
+    }
+
+    hr {
+        @apply w-full;
+    }
+
+    p {
+        @apply mb-4;
+    }
+
+    /* nav a {
+        @apply no-underline;
+    } */
+
+    
+}

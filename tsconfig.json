@@ -1,29 +1,39 @@
 {
-  "compilerOptions": {
-    "baseUrl": ".",
-    "module": "ESNext",
-    "target": "ESNext",
-    "lib": ["DOM", "ESNext"],
-    "strict": true,
-    "esModuleInterop": true,
-    "jsx": "preserve",
-    "skipLibCheck": true,
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "noUnusedLocals": true,
-    "strictNullChecks": true,
-    "allowJs": true,
-    "forceConsistentCasingInFileNames": true,
-    "types": [
-      "vitest",
-      "vite/client",
-      "vue/ref-macros",
-      "vite-plugin-pages/client",
-      "vite-plugin-vue-layouts/client"
-    ],
-    "paths": {
-      "~/*": ["src/*"]
-    }
-  },
-  "exclude": ["dist", "node_modules", "cypress"]
+	"compilerOptions": {
+		"baseUrl": ".",
+		"module": "ESNext",
+		"target": "ESNext",
+		"lib": ["DOM", "ESNext"],
+		"strict": true,
+		"esModuleInterop": true,
+		"jsx": "preserve",
+		"skipLibCheck": true,
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"noUnusedLocals": true,
+		"strictNullChecks": true,
+		"allowJs": true,
+		"forceConsistentCasingInFileNames": true,
+		"types": [
+			"vitest",
+			"vite/client",
+			"vue/ref-macros",
+			"vite-plugin-pages/client",
+			"vite-plugin-vue-layouts/client"
+		],
+		"typeRoots": ["./types/**/*.d.ts", "*.d.ts"],
+		"paths": {
+			"@/*": ["src/*"]
+		}
+	},
+	"exclude": ["dist", "node_modules", "cypress"],
+	"include": [
+		"src/**/*.ts",
+		"src/**/*.d.ts",
+		"src/**/*.tsx",
+		"src/**/*.vue",
+		"components.d.ts",
+		"auto-imports.d.ts",
+		"typed-router.d.ts"
+	]
 }

@@ -1,0 +1,22 @@
+@tailwind base;
+
+@layer base {
+    :root {
+        --primary: #3e1761;
+        --secondary: hsl(186, 43%, 36%);
+        --gray: #878787;
+        --gray-dark: #696969;
+        --gray-light: #e1e1e1;
+        --table-active: var(--secondary);
+        --table-text-active: #fff;
+        --table-border: var(--gray);
+        --table-active-border: var(--secondary);
+        --table: var(--gray-light);
+        --header: var(--primary, #3e1761);
+        --nav-hover-color: var(--secondary);
+        --nav-active-color: hsl(186, 53%, 26%);
+        --button: rgb(51, 143, 153, 0.4);
+        --footer: var(--gray-dark);
+        --page-top: 136px;
+    }
+}

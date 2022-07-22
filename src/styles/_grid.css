@@ -1,0 +1,11 @@
+@layer base {
+    .row {
+        @apply flex flex-row flex-wrap w-full md:space-x-2;
+        &.no-space {
+            @apply md:space-x-0;
+        }
+        .col {
+            @apply flex w-full md:flex-1;
+        }
+    }
+}
